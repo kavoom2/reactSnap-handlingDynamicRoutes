@@ -1,4 +1,8 @@
 #!/usr/bin/env node
+// ! ES6 Module과 CommonJS Module을 Mixing하기 위해 "ESM" 패키지를 사용합니다.
+// ** https://www.npmjs.com/package/esm
+require = require("esm")(module);
+
 // * 패키지 React Snap의 index.js | run.js를 사용헙니다.
 // * 해당 스크립트 중 includes를 package.json에 의존하지 않고, React-Router에 따라 동적으로 변하도록 하였습니다.
 
